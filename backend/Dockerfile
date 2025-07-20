@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ARG PB_VERSION=0.28.3
+ARG PB_VERSION=0.26.6
 
 RUN apk add --no-cache \
     unzip \
@@ -17,5 +17,9 @@ RUN chmod +x /pb/init.sh
 
 EXPOSE 8080
 
-# init.sh をCMDで実行
-CMD ["/pb/init.sh"]
+# pb_data フォルダ（ローカルでコレクション作った状態）をコピー
+COPY pb_data/ /pb/pb_data/
+
+# CMDで PocketBase 起動時に --dir 指定
+CMD ["/pb/pocketbase", "serve", "--http=0.0.0.0:8080", "--dir", "/pb/pb_data"]
+
