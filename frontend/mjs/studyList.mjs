@@ -7,7 +7,7 @@ import { createStudyBanner } from "./studyBannerFactory.mjs";
  * @date 2025-06-23
  */
 
-const pb = new PocketBase("http://localhost:8080");
+const pb = new PocketBase("https://studymanager-backend.onrender.com");
 
 // 認証チェック
 if (!pb.authStore.isValid) {

@@ -3,7 +3,7 @@ import PocketBase from "https://esm.sh/pocketbase";
 /**
  * プロフィール編集
  */
-const pb = new PocketBase("http://localhost:8080");
+const pb = new PocketBase("https://studymanager-backend.onrender.com");
 
 if (!pb.authStore.isValid) {
   window.location.href = "../login.html";

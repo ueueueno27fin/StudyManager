@@ -6,7 +6,7 @@ import PocketBase from "https://esm.sh/pocketbase";
  * @date 2025-06-21
  */
 
-const pb = new PocketBase("http://localhost:8080");
+const pb = new PocketBase("https://studymanager-backend.onrender.com");
 
 // ボタン押下時処理
 document.getElementById("createAccountBtn").addEventListener("click", async () => {

@@ -6,7 +6,7 @@ import PocketBase from "https://esm.sh/pocketbase";
  * @date 2025-06-24
  */
 
-const pb = new PocketBase("http://localhost:8080");
+const pb = new PocketBase("https://studymanager-backend.onrender.com");
 
 // 教材単体登録
 async function createStudyMaterial(material) {

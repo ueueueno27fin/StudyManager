@@ -6,7 +6,7 @@ import { calcTodayNorma } from "../js/calcNorma.js";
  * @date 2025-07-07
  */
 
-const pb = new PocketBase("http://localhost:8080");
+const pb = new PocketBase("https://studymanager-backend.onrender.com");
 const themeId = sessionStorage.getItem("themeId");
 
 const theme = await pb.collection("studyTheme").getOne(themeId, {
