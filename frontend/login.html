@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/loginStyle.css">
+    <title>勉強道場ログインページ</title>
+</head>
+
+<body>
+    <form id="loginPanel">
+        <p id="upperP">アカウントをお持ちの方はこちら</p>
+        <div id="upper">
+            <div class="inputBlock">
+                <label for="emailInput">メールアドレス:</label>
+                <input type="text" id="emailInput">
+            </div>
+            <div class="inputBlock">
+                <label for="passwordInput">パスワード:</label>
+                <input type="password" id="passwordInput">
+            </div>
+            <div id="errDiv"></div>
+            <input type="button" id="loginBtn" value="ログイン">
+        </div>
+
+        <p id="bottomP">アカウントをお持ちでない方はこちら</p>
+        <div id="bottom">
+            <input type="button" onclick="location.href='./createAccount'" id="createAccountBtn" value="アカウント作成">
+        </div>
+
+        <script src="./mjs/loginHandle.mjs" type="module"></script>
+
+    </form>
+    <div id="loginBanner">
+        <h1>勉強道場<br>
+            ログインページ
+        </h1>
+    </div>
+</body>
+
+</html>

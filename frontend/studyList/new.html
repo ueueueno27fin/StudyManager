@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勉強新規作成</title>
+    <link rel="stylesheet" href="../css/mainParts.css">
+    <link rel="stylesheet" href="../css/studyMaterials.css">
+    <link rel="stylesheet" href="../css/createStudy.css">
+</head>
+
+<body>
+    <!--左側パネル(ナビゲーション)-->
+    <div id="leftPanel">
+
+        <!--今日の日付を表示する-->
+        <div id="todayDisplayBox">
+            <div id="todayDisplay"></div>
+        </div>
+
+        <!--各ページへの遷移リンク-->
+        <ul id="pageMoveLink">
+            <li id="toMyPage"><a href="../myPage">マイページ</a></li>
+            <li id="toStudyListNew"><a href="../studyList/new">勉強新規作成</a></li>
+            <li id="toStudyList"><a href="./">勉強一覧</a></li>
+        </ul>
+    </div>
+
+    <!--右側パネル(メインコンテンツ表示するよ)-->
+    <div id="rightPanel">
+        <!--ヘッダー-->
+        <header id="pageHeader" onclick="location.href='../topPage.html'">
+            <div>勉強道場</div>
+        </header>
+        <div id="rightElement">
+            <div id="registerPanel">
+                <div id="themeInput">
+                    <div class="inputBlock">
+                        <label for="themeTitle">勉強タイトル名:</label>
+                        <input type="text" id="themeTitle">
+                    </div>
+                </div>
+
+                <div id="durationInput">
+                    <div class="inputDateBlock">
+                        <label for="beginDay">開始日:</label>
+                        <input type="date" id="beginDay">
+                    </div>
+                    <p id="term">〜</p>
+                    <div class="inputDateBlock">
+                        <label for="endDay">終了日:</label>
+                        <input type="date" id="endDay">
+                    </div>
+                </div>
+
+                <div id="materialRegisterArea">
+                    <div class="inputBlock">
+                        <label for="registerContainer">教材:</label>
+                        <div id="registerContainer">
+                            <button id="addMaterialBtn">＋</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="commentInput">
+                    <div class="inputBlock">
+                        <label for="comment">説明文:</label>
+                        <textarea id="comment"></textarea>
+                    </div>
+                </div>
+
+                <div class="buttonWrapper">
+                    <input type="button" id="registerStudyBtn" value="登録する">
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <script src="../js/calendarDisplay.js"></script>
+    <script type="module" src="../mjs/registerStudy.mjs"></script>
+    <script src="../js/createStudyMaterialForm.js"></script>
+</body>
+
+</html>

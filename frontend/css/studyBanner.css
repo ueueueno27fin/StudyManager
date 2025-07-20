@@ -1,0 +1,64 @@
+.studyBanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 上下端に配置！ */
+    width: 50%;
+    min-height: 15vh;
+    background-color: #FFFFFF;
+    border: 3px solid #0085CA;
+    border-radius: 20px;
+    overflow: hidden; /* ← 親の角丸に合わせる！ */
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.studyThemeTitle {
+    padding: 2.5px 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    background-color: #0085CA;
+}
+
+.explainTxt {
+    padding: 10px 20px;
+    font-size: 0.9em;
+    color: #555;
+    flex-grow: 1; /* 中央部を伸ばしてスペース調整可 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.taskArea{
+    border: 2px solid #555;
+    background-color: #555;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.task{
+    border: 2px solid #555;
+    background: #FFFFFF;
+    color: #555;
+    padding-left: 5px;
+}
+
+.task b{
+    font-size: large;
+    color: #0085CA;
+}
+
+.deadline {
+    padding: 1.5px 20px;
+    background-color: #D9D9D9;
+    font-size: 0.8em;
+    color: #C00;
+}
+
+.deadline big {
+    font-size: 20px;
+    padding: 2px 2px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}

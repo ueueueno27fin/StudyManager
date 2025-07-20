@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイページ</title>
+    <link rel="stylesheet" href="../css/mainParts.css">
+    <link rel="stylesheet" href="../css/mypage.css">
+    <link rel="stylesheet" href="../css/studyBanner.css">
+</head>
+
+<body>
+    <!--左側パネル(ナビゲーション)-->
+    <div id="leftPanel">
+
+        <!--今日の日付を表示する-->
+        <div id="todayDisplayBox">
+            <div id="todayDisplay"></div>
+        </div>
+
+        <!--各ページへの遷移リンク-->
+        <ul id="pageMoveLink">
+            <li id="toMyPage"><a href="/myPage">マイページ</a></li>
+            <li id="toStudyListNew"><a href="/studyList/new">勉強新規作成</a></li>
+            <li id="toStudyList"><a href="/studyList">勉強一覧</a></li>
+        </ul>
+    </div>
+
+    <!--右側パネル(メインコンテンツ表示するよ)-->
+    <div id="rightPanel">
+        <!--ヘッダー-->
+        <header id="pageHeader" onclick="location.href='../topPage.html'">
+            <div>勉強道場</div>
+        </header>
+        <div id="myPageBody">
+            <h1 id="myPageTitle">
+                <ユーザ名>さんのマイページ
+            </h1>
+            <div id="mainContainer">
+                <div id="userIcon"></div>
+                <div id="rightElement">
+                    <ul>
+                        <li id="userName">名前:<ユーザ名>
+                        </li>
+                        <li id="email">メールアドレス:<ユーザemail>
+                        </li>
+                    </ul>
+                    <div id="btnBox">
+                        <button id="editProfile" onclick="location.href='myPage/edit.html'" >プロフィールを編集</button>
+                        <button id="deleteAccount">アカウント削除</button>
+                    </div>
+                    <div class="btnWrapper">
+                        <button id="logoutBtn">ログアウト</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/calendarDisplay.js"></script>
+    <script type="module" src="../mjs/mypage.mjs"></script>
+</body>
+
+</html>

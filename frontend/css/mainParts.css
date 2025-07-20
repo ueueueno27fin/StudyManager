@@ -1,0 +1,93 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#leftPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-right: 4px solid #D9D9D9;
+    z-index: 1;
+    width: 25%;
+    height: 200vh;
+}
+
+#rightPanel {
+    width: 80%;
+}
+
+header#pageHeader {
+    width: 100%;
+    height: 70px;
+    background-color: #0085CA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 10px 2.5px rgba(0, 0, 0, 0.5);
+}
+
+header#pageHeader div {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0px 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #0085CA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* inner shadow (Figma values) */
+    box-shadow: inset 2px 4px 5px rgba(0, 0, 0, 0.2);
+
+    /* text drop shadow */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.33);
+}
+
+#pageMoveLink {
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    /* 縦方向に並べる */
+    gap: 15px;
+    /* li の間に10pxの隙間 */
+    padding: 0;
+    font-weight: bold;
+    color: #0085CA;
+}
+
+#todayDisplayBox {
+    border: 5px solid #D9D9D9;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todayDisplay{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+
+
+
+#pageMoveLink a {
+    color: #0085CA;
+    text-decoration: none; /* 下線を消したい場合 */
+}
+
+#pageMoveLink a:hover {
+    color: #005f94;         /* ホバー時に濃くしたり */
+    text-decoration: underline; /* ホバーで下線つけてもOK */
+}

@@ -1,0 +1,9 @@
+# backend: PocketBase バイナリとデータを除外
+/backend/pocketbase
+/backend/pb_data/*
+!/backend/pb_data/.gitkeep
+
+# OSやエディタのゴミ
+.DS_Store
+*.log
+*.env

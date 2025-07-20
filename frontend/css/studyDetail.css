@@ -1,0 +1,81 @@
+#rightElement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px
+}
+
+#detailPanel{
+    width: 70%;
+    height: 85vh;
+    border: 3px solid #0085CA;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#studyTitle{
+    font-size: xx-large;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding: 20px;
+    align-self: center;
+}
+
+#materialContainer{
+    width: 60%;
+    height: 45vh;
+    border: 2px solid #0085CA;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+
+#commentOfStudy{
+    width: 60%;
+    height: 20%;
+    border: 2px solid #000000;
+    align-self: center;
+    overflow-y: auto;          /* 縦スクロール可 */
+    overflow-x: hidden;        /* 横スクロールはなし */
+    word-break: break-word;    /* 単語の途中でも折り返し */
+}
+
+#btnBox {
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end; /* 横方向に右寄せ */
+    margin-top: auto; /* 他の要素の下に配置されるように */
+    gap: 15px;
+}
+
+#doneToday{
+    font-weight: bold;
+    color: red;
+}
+
+#registerProgress{
+    color: #0085CA;
+    background-color: #FFFFFF;
+    border: 2px solid #0085CA;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#deleteStudy{
+    color: #CA0085;
+    background-color: #FFFFFF;
+    border: 2px solid #CA0085;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#registerProgress:hover,
+#deleteStudy:hover {
+    background-color: #EEEEEE; /* 明るめのグレー */
+    cursor: pointer;
+}

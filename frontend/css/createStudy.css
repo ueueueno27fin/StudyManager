@@ -1,0 +1,126 @@
+#rightElement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px
+}
+
+#registerPanel {
+    min-width: 70%;
+    min-height: 83vh;
+    border: 3px solid #0085CA;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#themeInput {
+    margin-top: 30px;
+}
+
+.inputBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width: 40vw;
+}
+
+.inputBlock label {
+    font-size: 20px;
+}
+
+.inputDateBlock {
+    width: 35%;
+}
+
+#term {
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#themeInput input[type='text'],
+#durationInput input[type='date'] {
+    height: 30px;
+    width: 100%;
+    font-size: 25px;
+}
+
+#commentInput textarea {
+    height: 150px; /* 30vhだと画面高さによって大きく変わるので固定pxもおすすめ */
+    width: 100%;
+    font-size: 25px;
+    resize: vertical; /* ユーザーが縦方向にはサイズ調整できるように */
+    min-height: 100px; /* これで小さくなりすぎるのを防ぐ */
+    max-height: 300px; /* 大きくなりすぎるのも防止 */
+}
+
+
+
+#comment {
+    height: 80px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-break: break-word;
+}
+
+#durationInput {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-self: center;
+}
+
+#registerContainer {
+    border: 1px solid #000000;
+    height: 35vh;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#addMaterialBtn {
+    margin-top: 20px;
+    width: 40px;
+    background-color: #D9D9D9;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+#addMaterialBtn:hover {
+    background-color: #b0b0b0;
+    /* もう少し濃いグレーでちょいアクセント */
+    cursor: pointer;
+}
+
+.buttonWrapper {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    /* 右寄せ */
+    padding: 10px;
+    /* 余白はお好みで */
+}
+
+#registerStudyBtn {
+    width: 95px;
+    height: 40px;
+    background-color: #0085CA;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #0085CA;
+    color: #fff;
+    border-radius: 20px;
+}
+
+#registerStudyBtn:hover {
+    background-color: #00cafd;
+    cursor: pointer;
+}

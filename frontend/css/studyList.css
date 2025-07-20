@@ -1,0 +1,77 @@
+#mainArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+
+#mainArea h1{
+    color: #0085CA;
+    height: 100%;
+}
+
+#searchArea{
+    width: 70%;
+    min-height: 95px;
+    background-color: #0085CA;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#filterInput{
+    height: 30px;
+    width: 40%;
+    font-size: 25px;
+}
+
+#searchArea{
+    margin: 10px;
+}
+
+#searchBtn{
+    width: 85px;
+    height: 40px;
+    border: 3px solid #FFFFFF;
+    background-color: #0085CA;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#searchBtn:hover{
+    background-color: #0071B8;
+}
+
+#createBtnArea{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+}
+
+#createStudyBtn{
+    width: 160px;
+    height: 50px;
+    background-color: #0085CA;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 28px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+#createStudyBtn:hover{
+    background-color: #0071B8;
+}
+
+div#studyListContainer{
+    min-height: 60vh;
+    width: 80%;
+    border: 4px solid #0085CA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

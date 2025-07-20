@@ -1,0 +1,95 @@
+#userIcon{
+    width: 256px;
+    height: 256px;
+    background-color: #d9d9d9;
+    margin-right: 20px;
+}
+
+#myPageBody {
+    display: flex;
+    justify-content: center; /* 横方向中央揃え */
+    flex-direction: column; /* 中身が縦に並ぶならこれ */
+    padding: 20px;
+    margin: 0 0;
+}
+
+#myPageTitle{
+    align-self: center;
+}
+
+#mainContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    height: 256px;
+}
+
+#rightElement {
+    display: flex;
+    flex-direction: column; /* 縦並びにする */
+    height: 100%; /* または適切な高さを指定 */
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#rightElement ul {
+    list-style: none;       /* 丸（デフォルトのマーカー）を消す */
+    padding: 0;             /* 左の余白を消したい場合 */
+    line-height: 2em;       /* 行間を広げる */
+}
+
+#btnBox {
+    margin-top: auto; /* 自動で上の空間を広げて最下部に配置 */
+}
+
+#editProfile{
+    color: #0085CA;
+    background-color: #FFFFFF;
+    border: 2px solid #0085CA;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#deleteAccount{
+    color: #CA0085;
+    background-color: #FFFFFF;
+    border: 2px solid #CA0085;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#editProfile:hover,
+#deleteAccount:hover {
+    background-color: #EEEEEE; /* 明るめのグレー */
+    cursor: pointer;
+}
+
+.btnWrapper {
+    width: 100%;
+    display: flex;
+    padding-top: 100px;
+    justify-content: flex-end;
+}
+
+
+#logoutBtn {
+    width: 130px;
+    height: 40px;
+    background-color: #0085CA;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #0085CA;
+    color: #fff;
+    border-radius: 20px;
+}
+
+#logoutBtn:hover {
+    background-color: #00cafd;
+    cursor: pointer;
+}
+
+img{
+    border: 2px solid #000000;
+}

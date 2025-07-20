@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロフィール編集</title>
+    <link rel="stylesheet" href="../css/mainParts.css">
+    <link rel="stylesheet" href="../css/mypageEdit.css">
+</head>
+
+<body>
+    <!--左側パネル(ナビゲーション)-->
+    <div id="leftPanel">
+
+        <!--今日の日付を表示する-->
+        <div id="todayDisplayBox">
+            <div id="todayDisplay"></div>
+        </div>
+
+        <!--各ページへの遷移リンク-->
+        <ul id="pageMoveLink">
+            <li id="toMyPage"><a href="/myPage">マイページ</a></li>
+            <li id="toStudyListNew"><a href="/studyList/new">勉強新規作成</a></li>
+            <li id="toStudyList"><a href="/studyList">勉強一覧</a></li>
+        </ul>
+    </div>
+
+    <!--右側パネル(メインコンテンツ表示するよ)-->
+    <div id="rightPanel">
+        <!--ヘッダー-->
+        <header id="pageHeader" onclick="location.href='../topPage.html'">
+            <div>勉強道場</div>
+        </header>
+        <div id="inputArea">
+            <h1>- プロフィールを編集する -</h1>
+            <form>
+
+            <div class="inputBlock">
+                <label for="userNameInput">ユーザー名:</label>
+                <input type="text" id="userNameInput">
+            </div>
+            <div class="inputBlock">
+                <label for="userEmailInput">メールアドレス:</label>
+                <input type="email" id="userEmailInput">
+            </div>
+            <div class="inputBlock">
+                <label for="passwordInput">パスワード:</label>
+                <input type="password" id="passwordInput">
+            </div>
+            <div class="inputBlock">
+                <label for="passwordReInput">パスワード(確認用):</label>
+                <input type="password" id="passwordReInput">
+            </div>
+            <div class="inputBlock">
+                <label for="iconInput">アイコン:</label>
+                <input type="file" id="iconInput" accept="image/png, image/jpeg, image/jpg">
+                <small id="iconNote">※変更したい場合は新しいファイルを選択してください。<br>　対応フォーマット：.png、.jpeg、.jpg</small>
+            </div>
+
+            <div id="errDiv"></div>
+
+            <div class="buttonWrapper">
+                <input type="button" id="updateAccountBtn" value="保存する">
+            </div>
+            </form>
+        </div> 
+    </div>
+
+    <script src="../js/calendarDisplay.js"></script>
+    <script type="module" src="../mjs/userEdit.mjs"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+
+form#loginPanel {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+div#upper {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.inputBlock label {
+    font-size: 20px;
+}
+
+div#upper input[type="text"],
+div#upper input[type="password"] {
+    height: 30px;
+    width: 100%;
+    font-size: 25px;
+}
+
+input#loginBtn {
+    width: 320px;
+    height: 85px;
+    margin-top: 40px;
+    color: #0085CA;
+    font-size: 40px;
+    font-weight: bold;
+    border: 2px solid #0085CA;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+input#loginBtn:hover {
+    background-color: #EEEEEE;
+    cursor: pointer;
+}
+
+div#bottom {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input#createAccountBtn {
+    width: 320px;
+    height: 85px;
+    background-color: #0085CA;
+    font-size: 40px;
+    font-weight: bold;
+    border: 2px solid #0085CA;
+    color: #fff;
+    border-radius: 20px;
+}
+
+input#createAccountBtn:hover {
+    background-color: #00cafd;
+    cursor: pointer;
+}
+
+
+div#loginBanner {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    background-color: #0085CA;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#loginBanner h1 {
+    font-size: 64px;
+}
+
+p#upperP {
+    margin-left: 15%;
+    margin-top: 15%;
+    font-size: 18px;
+}
+
+p#bottomP {
+    margin-left: 15%;
+    font-size: 18px;
+}
+
+#errDiv{
+    color: red;
+}

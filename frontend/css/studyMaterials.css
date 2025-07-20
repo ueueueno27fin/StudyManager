@@ -1,0 +1,35 @@
+.inputMaterial {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 2.5px 20px;
+    background-color: #d9d9d9;
+    margin-top: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 133, 202, 0.1);
+    width: 40%;
+}
+
+.inputMaterial label {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+}
+
+.inputMaterial input,
+.inputMaterial select {
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9em;
+    width: 130px;
+}
+
+.inputMaterial select {
+    width: 130px;
+    background-color: #fff;
+}

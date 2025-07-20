@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/createAccount.css">
+    <title>アカウント作成ページ</title>
+</head>
+
+<body>
+    <div id="centerPanel">
+        <h1>アカウント作成</h1>
+        <form id="inputArea">
+            <div class="inputBlock">
+                <label for="userNameInput">ユーザー名:</label>
+                <input type="text" id="userNameInput">
+            </div>
+            <div class="inputBlock">
+                <label for="userEmailInput">メールアドレス:</label>
+                <input type="email" id="userEmailInput">
+            </div>
+            <div class="inputBlock">
+                <label for="passwordInput">パスワード:</label>
+                <input type="password" id="passwordInput">
+            </div>
+            <div class="inputBlock">
+                <label for="passwordReInput">パスワード(確認用):</label>
+                <input type="password" id="passwordReInput">
+            </div>
+            <div class="inputBlock">
+                <label for="iconInput">アイコン:</label>
+                <input type="file" id="iconInput" accept="image/png, image/jpeg, image/jpg">
+                <small id="iconNote">※対応フォーマット：.png、.jpeg、.jpg</small>
+            </div>
+
+            <div id="errDiv"></div>
+
+            <div class="buttonWrapper">
+                <input type="button" id="createAccountBtn" value="アカウント作成">
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="./mjs/createAccont.mjs"></script>
+</body>
+
+</html>

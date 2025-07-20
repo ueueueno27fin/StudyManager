@@ -1,0 +1,36 @@
+
+
+#todayTask,
+#doneTodayTask{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todayTask h1{
+    color: #CA0085;
+    height: 100%;
+}
+
+div#studyListContainer{
+    min-height: 60vh;
+    width: 80%;
+    border: 4px solid #CA0085;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#doneTodayTask h1{
+    color: #0085CA;
+    height: 100%;
+}
+
+div#doneStudyListContainer{
+    min-height: 60vh;
+    width: 80%;
+    border: 4px solid #0085CA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

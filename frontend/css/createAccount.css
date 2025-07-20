@@ -1,0 +1,72 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0085CA;
+}
+
+div#centerPanel{
+    align-items: center;
+    align-self: center;
+    background-color: #fff;
+    height: 100%;
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 0 0 100px 10px rgb(0, 0, 0, 0.5);
+}
+
+div#centerPanel h1 {
+    font-size: 48px;
+}
+
+.inputBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.inputBlock label {
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    height: 30px;
+    width: 100%;
+    font-size: 25px;
+}
+
+
+.buttonWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+
+input#createAccountBtn {
+    width: 320px;
+    height: 85px;
+    background-color: #0085CA;
+    font-size: 40px;
+    font-weight: bold;
+    border: 2px solid #0085CA;
+    color: #fff;
+    border-radius: 20px;
+}
+
+input#createAccountBtn:hover {
+    background-color: #00cafd;
+    cursor: pointer;
+}
