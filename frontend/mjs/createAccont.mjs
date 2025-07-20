@@ -45,7 +45,7 @@ document.getElementById("createAccountBtn").addEventListener("click", async () =
     try {
         await pb.collection("Users").create(formData);
         await pb.collection("Users").authWithPassword(email, password);
-        window.location.href = "./topPage";
+        window.location.href = "./index.html";
     } catch (err) {
         console.error(err);
         errDiv.innerHTML = "<p>アカウント作成に失敗しました。</p>";
