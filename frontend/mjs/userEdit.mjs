@@ -6,7 +6,7 @@ import PocketBase from "https://esm.sh/pocketbase";
 const pb = new PocketBase("http://localhost:8080");
 
 if (!pb.authStore.isValid) {
-  window.location.href = "../topPage.html";
+  window.location.href = "../index.html";
 }
 
 const userName = document.getElementById("userNameInput");

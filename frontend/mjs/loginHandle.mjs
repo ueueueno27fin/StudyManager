@@ -10,7 +10,7 @@ const pb = new PocketBase("http://localhost:8080")
 const errDiv = document.getElementById("errDiv");
 
 if(pb.authStore.isValid){
-  window.location.href = "./topPage.html"
+  window.location.href = "./index.html"
 }
 
 // ログインボタン押下
@@ -27,7 +27,7 @@ export async function tryLogin(event) {
         try {
             const authData = await pb.collection("Users").authWithPassword(email, password);
             console.log("ログイン成功", authData);
-            window.location.href = "./topPage.html";
+            window.location.href = "./index.html";
         } catch (error) {
             console.error("ログイン失敗", error);
             errDiv.textContent = "ログインに失敗しました。IDかパスワードを確認してください。";
