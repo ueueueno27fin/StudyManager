@@ -10,7 +10,7 @@ if (!pb.authStore.isValid) {
 }
 
 const userName = document.getElementById("userNameInput");
-const email = document.getElementById("userEmailInput");
+const passwordOld = document.getElementById("oldPasswordInput");
 const password = document.getElementById("passwordInput");
 const passwordRe = document.getElementById("passwordReInput");
 const iconFile = document.getElementById("iconInput");
@@ -22,7 +22,6 @@ const savedAuthData = JSON.parse(localStorage.getItem("pocketbase_auth"));
 function setText() {
   if (!savedAuthData || !savedAuthData.record) return;
   userName.value = savedAuthData.record.name || "";
-  email.value = savedAuthData.record.email || "";
 }
 
 setText();
@@ -33,7 +32,7 @@ updateBtn.addEventListener("click", updateUser);
 // ユーザー情報更新
 async function updateUser() {
   const newName = userName.value.trim();
-  const newEmail = email.value.trim();
+  const oldPassword = passwordOld.value.trim();
   const newPassword = password.value.trim();
   const rePassword = passwordRe.value.trim();
   const icon = iconFile.files[0];
@@ -41,19 +40,19 @@ async function updateUser() {
   const errDiv = document.getElementById("errDiv");
   errDiv.innerHTML = "";
 
-  // 基本バリデーション
-  if (!newName || !newEmail) {
-    errDiv.innerHTML = "名前とメールアドレスは必須です。";
+  if(!oldPassword){
+    errDiv.innerHTML = "前のパスワードを入力してください。";
     return;
   }
   if (newPassword && newPassword !== rePassword) {
     errDiv.innerHTML = "パスワードが一致しません。";
     return;
   }
+  
 
   const formData = new FormData();
   formData.append("name", newName);
-  formData.append("email", newEmail);
+  formData.append("oldPassword", oldPassword);
 
   if (newPassword) {
     formData.append("password", newPassword);
@@ -66,14 +65,14 @@ async function updateUser() {
 
   try {
     const updatedUser = await pb
-      .collection("users")
+      .collection("Users")
       .update(savedAuthData.record.id, formData);
 
     // パスワードを更新した場合は再認証
     if (newPassword) {
       const auth = await pb
-        .collection("users")
-        .authWithPassword(newEmail, newPassword);
+        .collection("Users")
+        .authWithPassword(savedAuthData.record.email, newPassword);
       pb.authStore.save(auth.token, auth.record);
     } else {
       // パスワード変更なしなら手動でauthStoreを更新
