@@ -11,7 +11,7 @@ const pb = new PocketBase("http://localhost:8080");
 
 // 認証チェック
 if (!pb.authStore.isValid) {
-  window.location.href = "../index.html";
+  window.location.href = "../login.html";
 }
 
 const userId = pb.authStore.record.id;
