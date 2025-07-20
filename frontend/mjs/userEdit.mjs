@@ -52,9 +52,9 @@ async function updateUser() {
 
   const formData = new FormData();
   formData.append("name", newName);
-  formData.append("oldPassword", oldPassword);
 
   if (newPassword) {
+    formData.append("oldPassword", oldPassword);
     formData.append("password", newPassword);
     formData.append("passwordConfirm", newPassword);
   }
