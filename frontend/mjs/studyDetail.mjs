@@ -125,11 +125,11 @@ document
 
       // 関連教材（materials）を順番に削除
       for (const material of materials) {
-        await pb.collection("studymaterial").delete(material.id);
+        await pb.collection("StudyMaterial").delete(material.id);
       }
 
       // テーマ（studyTheme）自体を削除
-      await pb.collection("studyTheme").delete(themeId);
+      await pb.collection("StudyTheme").delete(themeId);
 
       alert("勉強テーマと関連教材を削除しました。");
       window.location.href = "/studyList/index.html"; // 一覧画面などに遷移
